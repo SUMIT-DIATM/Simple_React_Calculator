@@ -1,0 +1,43 @@
+.buttons {
+  height: 52px;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+
+  background: #2d2f4a;
+  color: #fff;
+
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.buttons:hover {
+  background: #3a3d66;
+}
+
+.buttons:active {
+  transform: scale(0.96);
+}
+
+
+.buttons:nth-child(4n),
+.buttons:nth-child(1) {
+  background: #ff9500;
+  color: #fff;
+}
+
+.buttons:nth-child(4n):hover,
+.buttons:nth-child(1):hover {
+  background: #ffad33;
+}
+
+
+.buttons:last-child {
+  grid-column: span 2;
+  background: #00c853;
+}
+
+.buttons:last-child:hover {
+  background: #1ed760;
+}
